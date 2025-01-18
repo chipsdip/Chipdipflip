@@ -1,2 +1,0 @@
-# Chipdipflip
-Token whitepaper
