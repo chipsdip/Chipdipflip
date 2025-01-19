@@ -22,6 +22,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 header p {
@@ -38,7 +39,7 @@ header .golden-button {
   text-decoration: none;
   margin: 10px;
   font-weight: bold;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 header .golden-button:hover {
@@ -67,7 +68,7 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Container & Sections */
+/* Container and Sections */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -115,7 +116,8 @@ section p {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 20px auto;
+  margin: 0 auto 20px;
+  border-radius: 10px;
 }
 
 /* Footer */
@@ -124,10 +126,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
-}
-
-footer p {
-  font-size: 1rem;
 }
 
 footer a {
@@ -144,34 +142,13 @@ footer a:hover {
   nav {
     flex-direction: column;
   }
-
   .container {
     width: 95%;
   }
-
   header h1 {
     font-size: 2rem;
   }
-
   header p {
     font-size: 1rem;
-  }
-
-  header .golden-button {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-
-  nav a {
-    font-size: 0.9rem;
-    padding: 8px 12px;
-  }
-
-  section h2 {
-    font-size: 1.8rem;
-  }
-
-  section p {
-    font-size: 0.9rem;
   }
 }
