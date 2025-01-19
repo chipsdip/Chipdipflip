@@ -46,8 +46,8 @@ body {
 
 .golden-button {
   display: inline-block;
-  background: linear-gradient(135deg, #ffcc00, #ff9900);
-  color: #fff;
+  background: linear-gradient(135deg, #ffcc00, #ff9900); /* Original gradient */
+  color: #ffffff; /* Ensure clear, contrasting white text */
   padding: 12px 25px;
   border-radius: 50px;
   font-size: 1.1rem;
@@ -55,6 +55,7 @@ body {
   margin: 10px;
   font-weight: bold;
   transition: transform 0.3s, box-shadow 0.3s;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle shadow to enhance text clarity */
 }
 
 .golden-button:hover {
