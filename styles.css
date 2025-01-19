@@ -27,6 +27,7 @@ header h1 {
 
 header p {
   font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 header .golden-button {
@@ -77,8 +78,8 @@ nav a:hover {
 }
 
 section {
-  padding: 40px 0;
-  margin-top: 10px;
+  padding: 40px 20px;
+  margin-top: 20px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -111,12 +112,12 @@ section p {
   margin-bottom: 10px;
 }
 
-/* Responsive Images */
+/* Images */
 .artwork {
-  max-width: 100%;
+  max-width: 60%; /* Reduced size for better balance */
   height: auto;
   display: block;
-  margin: 0 auto 20px;
+  margin: 20px auto;
   border-radius: 10px;
 }
 
@@ -142,13 +143,20 @@ footer a:hover {
   nav {
     flex-direction: column;
   }
-  .container {
-    width: 95%;
-  }
+
   header h1 {
     font-size: 2rem;
   }
+
   header p {
     font-size: 1rem;
+  }
+
+  .artwork {
+    max-width: 100%; /* Ensure images resize well on small screens */
+  }
+
+  section {
+    padding: 20px;
   }
 }
