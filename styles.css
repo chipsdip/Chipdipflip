@@ -1,179 +1,44 @@
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chip - The Strategic Meme Token</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f9fc;
-  color: #333;
-  line-height: 1.6;
-}
+<!-- Hero Section -->
+<header>
+  <h1>Chip - The Strategic Meme Token</h1>
+  <p>"Buy Chips. Eat Dips. Flip. Repeat."</p>
+  <a href="https://vscdex.io" class="golden-button">Buy Chip Now</a>
+  <a href="https://t.me/chipsdipofficial" class="golden-button">Join the Community</a>
+</header>
 
-/* Hero Section */
-header {
-  background: linear-gradient(135deg, #ffcc00, #ff9900);
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px;
-}
+<!-- Navigation -->
+<nav>
+  <a href="#introduction">Introduction</a>
+  <a href="#tokenomics">Tokenomics</a>
+  <a href="#nfts">NFT Rewards</a>
+  <a href="#burn">Buyback & Burn</a>
+  <a href="#roadmap">Roadmap</a>
+  <a href="#whitepaper">White Paper</a>
+  <a href="#technology">Technology</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
+<!-- Your existing content here -->
+<div class="container">
+  <!-- Sections, Roadmap, etc. -->
+</div>
 
-header p {
-  font-size: 1.5rem;
-  margin-bottom: 25px;
-}
+<!-- Footer -->
+<footer>
+  <p>"Secure Your Chips, Savor Every Dip."</p>
+  <p>All rights reserved &copy; 2025 Chip</p>
+</footer>
 
-header .golden-button {
-  display: inline-block;
-  background: linear-gradient(135deg, #ffcc00, #ff9900);
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 50px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin: 15px;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-}
-
-header .golden-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  background: #222;
-  padding: 15px 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #ffcc00;
-}
-
-/* Container and Sections */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-section {
-  padding: 50px 20px;
-  margin-top: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 25px;
-}
-
-section p {
-  text-align: center;
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-}
-
-/* Cards */
-.card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 25px;
-  margin: 20px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.card p {
-  font-size: 1.2rem;
-}
-
-/* Images */
-.artwork {
-  max-width: 50%; /* Further reduced size */
-  height: auto;
-  display: block;
-  margin: 30px auto;
-  border-radius: 10px;
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-footer a {
-  color: #ffcc00;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-  }
-
-  header h1 {
-    font-size: 2.2rem;
-  }
-
-  header p {
-    font-size: 1.1rem;
-  }
-
-  header .golden-button {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .artwork {
-    max-width: 90%; /* Images adapt to smaller screens */
-  }
-
-  section {
-    padding: 30px 15px;
-  }
-
-  section h2 {
-    font-size: 2rem;
-  }
-
-  section p {
-    font-size: 1rem;
-  }
-}
+<script src="script.js"></script>
+</body>
+</html>
