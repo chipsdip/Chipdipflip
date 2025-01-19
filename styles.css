@@ -1,44 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chip - The Strategic Meme Token</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Header Section */
+header {
+  background: url("chip/A_creative_banner_design_featuring_a_variety_of_co.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-<!-- Hero Section -->
-<header>
-  <h1>Chip - The Strategic Meme Token</h1>
-  <p>"Buy Chips. Eat Dips. Flip. Repeat."</p>
-  <a href="https://vscdex.io" class="golden-button">Buy Chip Now</a>
-  <a href="https://t.me/chipsdipofficial" class="golden-button">Join the Community</a>
-</header>
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
 
-<!-- Navigation -->
-<nav>
-  <a href="#introduction">Introduction</a>
-  <a href="#tokenomics">Tokenomics</a>
-  <a href="#nfts">NFT Rewards</a>
-  <a href="#burn">Buyback & Burn</a>
-  <a href="#roadmap">Roadmap</a>
-  <a href="#whitepaper">White Paper</a>
-  <a href="#technology">Technology</a>
-  <a href="#contact">Contact</a>
-</nav>
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
 
-<!-- Your existing content here -->
-<div class="container">
-  <!-- Sections, Roadmap, etc. -->
-</div>
+header .golden-button {
+  display: inline-block;
+  background: rgba(255, 204, 0, 0.8); /* Semi-transparent golden */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+}
 
-<!-- Footer -->
-<footer>
-  <p>"Secure Your Chips, Savor Every Dip."</p>
-  <p>All rights reserved &copy; 2025 Chip</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+header .golden-button:hover {
+  transform: scale(1.1);
+  background: rgba(255, 153, 0, 0.9);
+}
