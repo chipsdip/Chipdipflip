@@ -1,167 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chip - The Strategic Meme Token</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<!-- Hero Section -->
-<header class="banner">
-  <div class="banner-overlay">
-    <h1>Chip - The Strategic Meme Token</h1>
-    <p>"Buy Chips. Eat Dips. Flip. Repeat."</p>
-    <a href="https://vscdex.io" class="golden-button">Buy Chip Now</a>
-    <a href="https://t.me/chipsdipofficial" class="golden-button">Join the Community</a>
-  </div>
-</header>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
 
-<!-- Navigation -->
-<nav>
-  <a href="#introduction">Introduction</a>
-  <a href="#tokenomics">Tokenomics</a>
-  <a href="#nfts">NFT Rewards</a>
-  <a href="#burn">Buyback & Burn</a>
-  <a href="#roadmap">Roadmap</a>
-  <a href="#whitepaper">White Paper</a>
-  <a href="#technology">Technology</a>
-  <a href="#contact">Contact</a>
-</nav>
+/* Hero Section */
+header {
+  background: url('chip/banner.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
 
-<div class="container">
+header h1 {
+  font-size: 2.8rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
 
-  <!-- Introduction Section -->
-  <section id="introduction">
-    <h2>Introduction</h2>
-    <p>Chip is a community-driven meme token built on the Vector Smart Chain (VSC). It empowers users to strategically navigate the volatile crypto market and capitalize on price dips.</p>
-    <p>While embracing the fun nature of meme tokens, Chip provides real value through innovative tokenomics, a robust roadmap, and an NFT reward system.</p>
-    <img src="chip/1736138582632.jpg" alt="Chip Introduction Artwork" class="artwork">
-  </section>
+header p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
 
-  <!-- Tokenomics Section -->
-  <section id="tokenomics">
-    <h2>Tokenomics</h2>
-    <div class="card">
-      <h3>Token Distribution</h3>
-      <ul>
-        <li>60% Liquidity Pool</li>
-        <li>15% CEX Listings</li>
-        <li>10% Buyback & Burn</li>
-        <li>10% Developers</li>
-        <li>5% Community Building</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Supply Details</h3>
-      <p>Total Supply: 10,000,000 CHIP</p>
-    </div>
-    <img src="chip/1736138630904.jpg" alt="Chip Tokenomics Artwork" class="artwork">
-  </section>
+header .golden-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  <!-- NFT Rewards Section -->
-  <section id="nfts">
-    <h2>NFT Rewards</h2>
-    <p>Chip introduces a tiered NFT system that rewards holders based on their balance and community engagement.</p>
-    <div class="card">
-      <h3>Tier 1</h3>
-      <p>VIP access to partnerships and new features.</p>
-    </div>
-    <div class="card">
-      <h3>Tier 2</h3>
-      <p>Airdrops of new tokens within the Chip ecosystem.</p>
-    </div>
-    <div class="card">
-      <h3>Tier 3</h3>
-      <p>Increased staking rewards and governance voting power.</p>
-    </div>
-    <div class="card">
-      <h3>Tier 4</h3>
-      <p>Exclusive community channels and events access.</p>
-    </div>
-    <img src="chip/1736139369603.jpg" alt="Chip NFT Rewards Artwork" class="artwork">
-  </section>
+header .golden-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
-  <!-- Buyback & Burn Section -->
-  <section id="burn">
-    <h2>Buyback & Burn Mechanism</h2>
-    <p>Chip implements a buyback and burn mechanism linked to VSG’s burn rate. This reduces the circulating supply, ensuring scarcity and value retention.</p>
-    <p><strong>How It Works:</strong></p>
-    <ul>
-      <li>Monitors VSG burn data weekly.</li>
-      <li>Calculates an equivalent amount of CHIP tokens to be burned.</li>
-      <li>Executes buyback and burn operations to maintain value.</li>
-    </ul>
-  </section>
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #222;
+  padding: 10px 0;
+}
 
-  <!-- Roadmap Section -->
-  <section id="roadmap">
-    <h2>Roadmap</h2>
-    <div class="card">
-      <h3>Phase 1: Genesis</h3>
-      <ul>
-        <li>Deploy the Chip token on the Vector Smart Chain (VSC).</li>
-        <li>Establish initial liquidity pools on DEXs.</li>
-        <li>Launch social media channels and build a vibrant community.</li>
-        <li>Execute targeted marketing campaigns.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Phase 2: Expansion & Utility</h3>
-      <ul>
-        <li>Introduce a staking platform with attractive rewards.</li>
-        <li>Explore partnerships and integrations within the VSC ecosystem.</li>
-        <li>Launch the first tier of Chip NFTs.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Phase 3: Scaling & Bridging</h3>
-      <ul>
-        <li>Bridge Chip to other major blockchains.</li>
-        <li>Secure listings on reputable Centralized Exchanges (CEXs).</li>
-        <li>Develop advanced tools and features for dip analysis.</li>
-        <li>Gradually release subsequent tiers of NFTs.</li>
-      </ul>
-    </div>
-    <img src="chip/Leonardo_Phoenix_10_Concept_1_The_Dip_Master_anime_style_0.jpg" alt="Chip Roadmap Artwork" class="artwork">
-  </section>
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-  <!-- White Paper Section -->
-  <section id="whitepaper">
-    <h2>White Paper</h2>
-    <p><strong>Abstract:</strong> Chip is a community-driven meme token built on the Vector Smart Chain (VSC). It empowers users to navigate the volatile crypto market and capitalize on price dips. With limited supply, community engagement, and innovative features, Chip aims to become a valuable asset for seasoned investors and newcomers alike.</p>
-    <p>For the full white paper, download <a href="chip/chip_white_paper.pdf" download>here</a>.</p>
-    <img src="chip/file-Tas8mFKc8uCazmNtBEVK1B.webp" alt="Chip White Paper Artwork" class="artwork">
-  </section>
+nav a:hover {
+  color: #ffcc00;
+}
 
-  <!-- Technology Section -->
-  <section id="technology">
-    <h2>Technology</h2>
-    <p>Chip is built on the Vector Smart Chain (VSC), offering a fast, secure, and cost-effective blockchain platform.</p>
-    <p>Smart Contract Address: <code>0x7dD929AF279D688Ef5444FF8b74e5ef530c2fbe4</code></p>
-  </section>
+/* Container and Sections */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Join the Chip Community</h2>
-    <p>Connect with us on our social platforms:</p>
-    <ul>
-      <li><a href="https://t.me/chipsdipofficial">Chip Telegram</a></li>
-      <li><a href="https://t.me/VSCOfficial">VSC Telegram</a></li>
-      <li><a href="https://x.com/IncGsd13263?t=d8gJIRzQnzaJ3tDYduaJCA&s=09">Twitter</a></li>
-      <li><a href="#">Discord</a></li>
-    </ul>
-  </section>
+section {
+  padding: 40px 0;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-</div>
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
-<!-- Footer -->
-<footer>
-  <p>"Secure Your Chips, Savor Every Dip."</p>
-  <p>All rights reserved &copy; 2025 Chip</p>
-</footer>
+section p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+/* Responsive Images */
+.artwork {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
