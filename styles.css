@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 350px; /* Adjusted height for a better fit */
+  height: 400px; /* Increased height to show more of the bottom */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ nav a:hover {
 }
 
 section {
-  padding: 40px 0;
+  padding: 40px 20px; /* Adjusted padding for better alignment */
   margin-top: 10px;
   background: #fff;
   border-radius: 8px;
@@ -107,6 +107,16 @@ section h2 {
 section p {
   font-size: 1.2rem;
   text-align: justify;
+}
+
+ul {
+  margin: 20px 0 20px 40px; /* Added margin to fix alignment */
+  padding: 0;
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 .artwork {
@@ -135,6 +145,10 @@ section p {
 
   .artwork {
     max-width: 90%;
+  }
+
+  ul {
+    margin-left: 20px; /* Adjusted for smaller screens */
   }
 }
 
