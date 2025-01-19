@@ -17,28 +17,28 @@ header {
   background: linear-gradient(135deg, #ffcc00, #ff9900);
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 header p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
 }
 
 header .golden-button {
   display: inline-block;
   background: linear-gradient(135deg, #ffcc00, #ff9900);
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  margin: 10px;
+  margin: 15px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
@@ -53,14 +53,14 @@ nav {
   display: flex;
   justify-content: center;
   background: #222;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
-  font-size: 1rem;
+  padding: 15px 20px;
+  font-size: 1.2rem;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -78,7 +78,7 @@ nav a:hover {
 }
 
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
   margin-top: 20px;
   background: #fff;
   border-radius: 8px;
@@ -87,14 +87,14 @@ section {
 
 section h2 {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
 }
 
 section p {
   text-align: center;
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
 }
 
 /* Cards */
@@ -102,22 +102,26 @@ section p {
   background: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
+  padding: 25px;
   margin: 20px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.2rem;
 }
 
 /* Images */
 .artwork {
-  max-width: 60%; /* Reduced size for better balance */
+  max-width: 50%; /* Further reduced size */
   height: auto;
   display: block;
-  margin: 20px auto;
+  margin: 30px auto;
   border-radius: 10px;
 }
 
@@ -145,18 +149,31 @@ footer a:hover {
   }
 
   header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   header p {
+    font-size: 1.1rem;
+  }
+
+  header .golden-button {
     font-size: 1rem;
+    padding: 10px 20px;
   }
 
   .artwork {
-    max-width: 100%; /* Ensure images resize well on small screens */
+    max-width: 90%; /* Images adapt to smaller screens */
   }
 
   section {
-    padding: 20px;
+    padding: 30px 15px;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 1rem;
   }
 }
