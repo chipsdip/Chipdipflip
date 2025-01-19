@@ -14,24 +14,21 @@ body {
 
 /* Hero Section */
 header {
-  background-image: url('chip/banner.jpg');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 80px 20px;
+  background: url('chip/banner.jpg') no-repeat center center/cover;
   color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 2.8rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 header p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 header .golden-button {
@@ -44,12 +41,12 @@ header .golden-button {
   text-decoration: none;
   margin: 10px;
   font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 header .golden-button:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Navigation */
@@ -83,7 +80,7 @@ nav a:hover {
 
 section {
   padding: 40px 0;
-  margin-top: 10px;
+  margin-top: 20px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -97,17 +94,8 @@ section h2 {
 
 section p {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 20px;
-}
-
-.card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
 }
 
 /* Responsive Images */
@@ -126,11 +114,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
-}
-
-footer p {
-  margin: 5px 0;
-  font-size: 1rem;
 }
 
 footer a {
@@ -156,16 +139,7 @@ footer a:hover {
     font-size: 1rem;
   }
 
-  .golden-button {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-  }
-
-  section p {
-    font-size: 1rem;
+  .container {
+    width: 95%;
   }
 }
