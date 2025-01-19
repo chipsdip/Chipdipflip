@@ -16,13 +16,14 @@ body {
 .banner {
   background-image: url('chip/banner.jpg');
   background-size: cover;
-  background-position: center bottom; /* Adjusted to show more of the bottom */
+  background-position: center bottom; /* Ensures more of the bottom is visible */
   position: relative;
-  height: 400px; /* Increased height slightly */
+  height: 450px; /* Adjusted height for better alignment */
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end; /* Ensures content moves closer to the bottom */
+  margin-bottom: -5px; /* Fine-tune positioning relative to button bar */
 }
 
 .banner-overlay {
@@ -111,7 +112,8 @@ section p {
 
 /* Bullet Alignment Fix */
 ul {
-  padding-left: 40px; /* Ensure bullets are properly aligned */
+  padding-left: 50px; /* Further adjusted padding for better alignment */
+  margin-right: auto; /* Ensures bullets stay within the content box */
 }
 
 .artwork {
