@@ -7,8 +7,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f9fc;
-  color: #333;
+  background-color: #1e1e1e; /* Dark Gray Background */
+  color: #fff; /* White text for contrast */
   line-height: 1.6;
 }
 
@@ -95,15 +95,16 @@ nav a:hover {
 section {
   padding: 40px 20px;
   margin-top: 10px;
-  background: #fff;
+  background: #333; /* Slightly lighter gray for contrast with the background */
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #ffcc00; /* Gold headings for a premium look */
 }
 
 section p {
@@ -111,27 +112,30 @@ section p {
   text-align: justify;
   margin: 0 auto;
   max-width: 800px; /* Limit text width for better readability */
+  color: #fff; /* White text for good contrast */
 }
 
 /* Card Styling */
 .card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
+  background: #444; /* Dark gray for cards */
+  border: 1px solid #555; /* Slightly lighter border */
   border-radius: 8px;
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Ensure cards are aligned with other content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #ffcc00; /* Gold text for headings */
 }
 
 .card p {
   font-size: 1.1rem;
   text-align: justify;
+  color: #ddd; /* Light gray for card text */
 }
 
 /* Bullet Alignment */
@@ -140,6 +144,7 @@ ul {
   margin-right: auto;
   max-width: 800px; /* Limit bullet section width */
   margin-left: auto; /* Center-align bullets */
+  color: #fff; /* White bullets */
 }
 
 .artwork {
