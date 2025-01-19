@@ -1,4 +1,4 @@
-/* Basic reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,58 +7,58 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* Changed from white for better contrast */
+  background-color: #f7f9fc;
   color: #333;
   line-height: 1.6;
 }
 
-/* Hero Section */
-header.banner {
-  background: url('chip/banner.jpg') no-repeat center center/cover;
+/* Banner Section */
+.banner {
+  background-image: url('chip/banner.jpg');
+  background-size: cover;
+  background-position: center;
   position: relative;
-  height: 300px;
-}
-
-header .banner-overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 350px; /* Adjusted height for a better fit */
   text-align: center;
-  color: #fff; /* Ensures text is visible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header h1 {
-  font-size: 2.5rem;
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text contrast */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.banner h1 {
+  font-size: 2.8rem; /* Larger font for better visibility */
   margin-bottom: 10px;
 }
 
-header p {
-  font-size: 1.2rem;
+.banner p {
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
-header .golden-button {
+.golden-button {
   display: inline-block;
   background: linear-gradient(135deg, #ffcc00, #ff9900);
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-decoration: none;
-  margin: 5px;
+  margin: 10px;
   font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-header .golden-button:hover {
+.golden-button:hover {
   transform: scale(1.1);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Navigation */
@@ -82,7 +82,7 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Container and Sections */
+/* Sections and Images */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -105,42 +105,37 @@ section h2 {
 }
 
 section p {
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
-.card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.card ul li {
-  margin-bottom: 10px;
-}
-
-/* Responsive Images */
 .artwork {
-  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   display: block;
   margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Responsive Images */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .golden-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .artwork {
+    max-width: 90%;
+  }
 }
 
 /* Footer */
@@ -152,34 +147,6 @@ footer {
 }
 
 footer p {
-  margin: 5px 0;
-}
-
-footer a {
-  color: #ffcc00;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Media Query for Responsiveness */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  header .golden-button {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
-
-  nav a {
-    font-size: 0.9rem;
-  }
+  margin: 5px;
+  font-size: 1rem;
 }
