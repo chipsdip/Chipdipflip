@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-position: top center;
   position: relative;
-  height: 500px;
+  height: 700px; /* Further increased height for better visibility */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -26,11 +26,14 @@ body {
 }
 
 .banner-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text contrast */
   color: white;
   padding: 20px;
   text-align: center;
   width: 100%;
+  position: absolute; /* Ensure it layers over the banner properly */
+  top: 50%; /* Centered vertically */
+  transform: translateY(-50%);
 }
 
 .banner h1 {
@@ -67,6 +70,8 @@ nav {
   justify-content: center;
   background: #222;
   padding: 10px 0;
+  position: relative; /* Ensure it doesn't interfere with the banner */
+  z-index: 10; /* Layer above the banner */
 }
 
 nav a {
@@ -120,6 +125,10 @@ section p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .banner {
+    height: 500px; /* Reduced height for smaller screens */
+  }
+
   .banner h1 {
     font-size: 2rem;
   }
