@@ -27,7 +27,7 @@ body {
 }
 
 .banner-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text contrast */
   color: white;
   padding: 20px;
   text-align: center;
@@ -109,13 +109,34 @@ section h2 {
 section p {
   font-size: 1.2rem;
   text-align: justify;
-  margin: 0 auto; /* Center-align paragraphs */
+  margin: 0 auto;
   max-width: 800px; /* Limit text width for better readability */
+}
+
+/* Card Styling */
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px; /* Ensure cards are aligned with other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 /* Bullet Alignment */
 ul {
-  padding-left: 50px;
+  padding-left: 50px; /* Proper alignment for bullet points */
   margin-right: auto;
   max-width: 800px; /* Limit bullet section width */
   margin-left: auto; /* Center-align bullets */
@@ -147,6 +168,10 @@ ul {
 
   .artwork {
     max-width: 90%;
+  }
+
+  .card {
+    max-width: 90%; /* Adjust card size for smaller screens */
   }
 
   section p,
