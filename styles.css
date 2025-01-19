@@ -16,18 +16,18 @@ body {
 .banner {
   background-image: url('chip/banner.jpg');
   background-size: cover;
-  background-position: center bottom; /* Ensures more of the bottom is visible */
+  background-position: center bottom;
   position: relative;
-  height: 450px; /* Adjusted height for better alignment */
+  height: 450px;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* Ensures content moves closer to the bottom */
-  margin-bottom: -5px; /* Fine-tune positioning relative to button bar */
+  align-items: flex-end;
+  margin-bottom: -5px;
 }
 
 .banner-overlay {
-  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text contrast */
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 20px;
   text-align: center;
@@ -83,16 +83,17 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Sections and Images */
+/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 20px auto; /* Center the container and add vertical spacing */
   padding: 20px;
 }
 
+/* Sections */
 section {
-  padding: 40px 0;
+  padding: 40px 20px;
   margin-top: 10px;
   background: #fff;
   border-radius: 8px;
@@ -108,12 +109,16 @@ section h2 {
 section p {
   font-size: 1.2rem;
   text-align: justify;
+  margin: 0 auto; /* Center-align paragraphs */
+  max-width: 800px; /* Limit text width for better readability */
 }
 
-/* Bullet Alignment Fix */
+/* Bullet Alignment */
 ul {
-  padding-left: 50px; /* Further adjusted padding for better alignment */
-  margin-right: auto; /* Ensures bullets stay within the content box */
+  padding-left: 50px;
+  margin-right: auto;
+  max-width: 800px; /* Limit bullet section width */
+  margin-left: auto; /* Center-align bullets */
 }
 
 .artwork {
@@ -125,7 +130,7 @@ ul {
   border-radius: 10px;
 }
 
-/* Responsive Images */
+/* Responsive Design */
 @media (max-width: 768px) {
   .banner h1 {
     font-size: 2rem;
@@ -142,6 +147,11 @@ ul {
 
   .artwork {
     max-width: 90%;
+  }
+
+  section p,
+  ul {
+    max-width: 90%; /* Adjusted for smaller screens */
   }
 }
 
