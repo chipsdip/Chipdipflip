@@ -16,9 +16,9 @@ body {
 .banner {
   background-image: url('chip/banner.jpg');
   background-size: cover;
-  background-position: top center;
+  background-position: center bottom; /* Adjusted to show more of the bottom */
   position: relative;
-  height: 700px; /* Further increased height for better visibility */
+  height: 400px; /* Increased height slightly */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -31,18 +31,15 @@ body {
   padding: 20px;
   text-align: center;
   width: 100%;
-  position: absolute; /* Ensure it layers over the banner properly */
-  top: 50%; /* Centered vertically */
-  transform: translateY(-50%);
 }
 
 .banner h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
 }
 
 .banner p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
@@ -52,7 +49,7 @@ body {
   color: #fff;
   padding: 12px 25px;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
   margin: 10px;
   font-weight: bold;
@@ -70,8 +67,6 @@ nav {
   justify-content: center;
   background: #222;
   padding: 10px 0;
-  position: relative; /* Ensure it doesn't interfere with the banner */
-  z-index: 10; /* Layer above the banner */
 }
 
 nav a {
@@ -114,6 +109,11 @@ section p {
   text-align: justify;
 }
 
+/* Bullet Alignment Fix */
+ul {
+  padding-left: 40px; /* Ensure bullets are properly aligned */
+}
+
 .artwork {
   width: 100%;
   max-width: 600px;
@@ -123,12 +123,8 @@ section p {
   border-radius: 10px;
 }
 
-/* Responsive Design */
+/* Responsive Images */
 @media (max-width: 768px) {
-  .banner {
-    height: 500px; /* Reduced height for smaller screens */
-  }
-
   .banner h1 {
     font-size: 2rem;
   }
