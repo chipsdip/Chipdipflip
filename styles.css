@@ -54,13 +54,14 @@ body {
   text-decoration: none;
   margin: 10px;
   font-weight: bold;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, text-shadow 0.3s;
   text-shadow: 2px 2px 4px #ffcc00; /* Golden shadow */
 }
 
 .golden-button:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 3px 6px #ffd700; /* Lighter golden shadow on hover */
 }
 
 /* Hyperlinks */
