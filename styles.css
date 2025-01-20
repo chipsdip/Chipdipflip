@@ -12,6 +12,24 @@ body {
   line-height: 1.6;
 }
 
+/* Golden Button Styling */
+.golden-button {
+  display: inline-block;
+  background-color: #f39c12; /* Gold Color */
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem;
+}
+
+.golden-button:hover {
+  background-color: #d48806;
+}
+
 /* Banner Section */
 .banner {
   background-image: url('chip/banner.jpg');
@@ -111,12 +129,12 @@ section p {
 .artwork {
   display: block;
   margin: 2vh auto;
-  max-width: 80%; /* Scale image size by percentage */
+  max-width: 60%; /* Scale image size to a smaller percentage */
   height: auto;
   border: none; /* Removes any default borders */
   padding: 0;
   border-radius: 10px; /* Optional for rounded corners */
-  box-shadow: none; /* Ensures no shadows create a border effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
 }
 
 /* Footer Styling */
@@ -156,6 +174,11 @@ footer p {
   }
 
   .artwork {
-    max-width: 90%;
+    max-width: 80%; /* Ensure images are smaller for mobile */
+  }
+
+  .golden-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
   }
 }
