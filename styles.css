@@ -12,12 +12,37 @@ body {
   line-height: 1.6;
 }
 
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #222;
+  padding: 10px 0;
+  border-bottom: 2px solid #ffcc00; /* Gold bottom border for distinction */
+}
+
+nav a {
+  color: #ffcc00; /* Gold color for links */
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent; /* Button-like effect */
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+nav a:hover {
+  background: #ffcc00; /* Gold background on hover */
+  color: #222; /* Dark text on hover */
+  border: 2px solid #ffcc00; /* Match border to background */
+}
+
 /* Banner Section */
 .banner {
   background-image: url('chip/banner.jpg');
   background-size: cover;
   background-position: center bottom;
-  position: relative;
   height: 450px;
   text-align: center;
   display: flex;
@@ -46,7 +71,7 @@ body {
 .golden-button {
   display: inline-block;
   background: linear-gradient(135deg, #ffcc00, #ff9900);
-  color: #333333 !important;
+  color: #333 !important;
   padding: 12px 25px;
   border-radius: 50px;
   font-size: 1.1rem;
@@ -60,33 +85,34 @@ body {
 .golden-button:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 3px 6px #ffd700; /* Lighter golden shadow on hover */
 }
 
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  background: #222;
-  padding: 10px 0;
+/* Links */
+a {
+  color: #ffcc00; /* Gold links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
-nav a {
-  padding: 10px 15px;
-  font-size: 1rem;
+a:hover {
+  color: #ffd700; /* Lighter gold on hover */
+  text-shadow: 0 0 5px #ffd700; /* Glow effect */
 }
 
 /* Container */
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 20px auto; /* Center the container and add vertical spacing */
   padding: 20px;
 }
 
 /* Sections */
 section {
   padding: 40px 20px;
-  background: #333;
+  background: #333; /* Slightly lighter gray for contrast with the background */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -94,7 +120,7 @@ section {
 section h2 {
   text-align: center;
   font-size: 2rem;
-  color: #ffcc00;
+  color: #ffcc00; /* Gold headings */
 }
 
 section p {
@@ -102,32 +128,67 @@ section p {
   text-align: justify;
 }
 
-/* Card Styling */
+/* Cards */
 .card {
   background: #444;
+  border: 1px solid #555;
   border-radius: 8px;
   padding: 20px;
-  max-width: 800px;
   margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ddd;
+}
+
+/* Images */
+.artwork {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap; /* Allow nav items to wrap */
+  }
+
   .banner h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
   }
 
   .golden-button {
-    font-size: 0.85rem;
-    padding: 8px 15px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
   }
 
-  nav {
-    flex-wrap: wrap;
+  .artwork {
+    max-width: 90%;
   }
 
   .card {
-    max-width: 100%;
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  section p,
+  ul {
+    max-width: 90%;
   }
 }
 
@@ -137,6 +198,7 @@ section p {
   }
 
   .golden-button {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    padding: 8px 16px;
   }
 }
