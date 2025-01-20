@@ -77,6 +77,10 @@ nav {
   background-color: #2a2a2a;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  justify-content: center; /* Center navigation items */
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Add spacing between navigation items */
 }
 
 nav a {
