@@ -16,7 +16,7 @@ body {
 .golden-button {
   display: inline-block;
   background: linear-gradient(90deg, #f39c12, #e67e22);
-  color: #fff;
+  color: #333; /* Charcoal color for button font */
   padding: 0.75em 1.5em;
   border: 2px solid #d35400;
   border-radius: 25px;
@@ -26,12 +26,13 @@ body {
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 0px 0px 8px rgba(255, 223, 0, 0.5); /* Subtle glow for buttons */
 }
 
 .golden-button:hover {
   background: linear-gradient(90deg, #e67e22, #f39c12);
   color: #000;
-  box-shadow: 0px 4px 10px rgba(255, 223, 0, 0.5);
+  box-shadow: 0px 4px 15px rgba(255, 223, 0, 0.8); /* Glow intensifies on hover */
 }
 
 /* Banner Section */
@@ -73,15 +74,41 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #f39c12; /* Golden hyperlinks */
   margin: 0 1.5vw;
   text-decoration: none;
   font-size: 1.5vw; /* Scale font size by viewport width */
-  transition: color 0.3s;
+  transition: all 0.3s ease;
+  position: relative;
+  text-shadow: 0px 0px 5px rgba(255, 223, 0, 0.5); /* Subtle glow effect */
 }
 
 nav a:hover {
-  color: #f39c12; /* Highlight color */
+  color: #fff;
+  text-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12; /* Brighter glow on hover */
+}
+
+.golden-button-nav {
+  display: inline-block;
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+  color: #333; /* Charcoal font color for navigation buttons */
+  padding: 0.5em 1em;
+  border: 2px solid #d35400;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgba(255, 223, 0, 0.5); /* Subtle glow */
+}
+
+.golden-button-nav:hover {
+  background: linear-gradient(90deg, #e67e22, #f39c12);
+  color: #000;
+  box-shadow: 0px 4px 15px rgba(255, 223, 0, 0.8); /* Glow intensifies on hover */
 }
 
 /* Section Styling */
