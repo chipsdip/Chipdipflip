@@ -48,7 +48,7 @@
 
   /* Banner Section */
   .banner {
-    background-image: url('chip/banner.jpg');
+    background-image: url('./chip/banner.jpg');
     background-size: cover;
     background-position: center bottom;
     height: 450px;
@@ -133,6 +133,17 @@
     font-size: 1rem;
   }
 
+  footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  footer a:hover {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+  }
+
   /* Additional Styling */
   .card {
     background: #444;
@@ -155,6 +166,33 @@
     font-size: 0.9rem;
     margin-top: 20px;
     text-align: justify;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+    }
+    .banner h1 {
+      font-size: 2rem;
+    }
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    section h2 {
+      font-size: 1.5rem;
+    }
+    section p {
+      font-size: 0.9rem;
+    }
+    .golden-button {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
   }
 </style>
 </head>
@@ -181,13 +219,11 @@
 </nav>
 
 <div class="container">
-  <!-- Introduction Section -->
   <section id="introduction">
     <h2>Introduction</h2>
     <p>$CHIP, inspired by the playful and strategic meme "eating the dip," capitalizes on market downturns within the Vector Smart Chain (VSC) ecosystem. By blending memetic appeal with functional utility, $CHIP creates a token designed to enhance user interaction while being explicitly defined as a utility token, not a security, in any jurisdiction.</p>
   </section>
 
-  <!-- Tokenomics Section -->
   <section id="tokenomics">
     <h2>Tokenomics</h2>
     <div class="card">
@@ -216,7 +252,6 @@
     </div>
   </section>
 
-  <!-- NFT Rewards Section -->
   <section id="nfts">
     <h2>NFT Rewards</h2>
     <div class="card">
@@ -267,7 +302,6 @@
     </div>
   </section>
 
-  <!-- Raid Performance Section -->
   <section id="raids">
     <h2>Monthly Airdrops and Raid Performance</h2>
     <p>Active participation in community raids is crucial for qualifying for $CHIP monthly airdrops. These mechanics ensure fairness and incentivize ecosystem growth:</p>
@@ -286,7 +320,6 @@
     </div>
   </section>
 
-  <!-- Buyback & Burn Section -->
   <section id="burn">
     <h2>Buyback & Burn Mechanism</h2>
     <p>Chip implements a buyback and burn mechanism linked to VSG’s burn rate. This reduces the circulating supply, ensuring scarcity and value retention.</p>
@@ -297,7 +330,6 @@
     </ul>
   </section>
 
-  <!-- Roadmap Section -->
   <section id="roadmap">
     <h2>Roadmap</h2>
     <div class="card">
@@ -327,7 +359,6 @@
     </div>
   </section>
 
-  <!-- White Paper Section -->
   <section id="whitepaper">
     <h2>White Paper</h2>
     <p>$CHIP’s white paper outlines the framework for a utility token combining strategic engagement and community-driven initiatives. Key details include:</p>
@@ -340,7 +371,6 @@
     <a href="chip/chip_white_paper.pdf" class="golden-button" download>Download Full White Paper</a>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <h2>Join the Chip Community</h2>
     <ul>
@@ -378,7 +408,18 @@
 
   const backToTopButton = document.createElement('button');
   backToTopButton.textContent = '↑';
-  document.body.appendChild(backToTopButton);
-</script>
-</body>
-</html>
+  backToTopButton.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  `
