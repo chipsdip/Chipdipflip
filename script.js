@@ -1,17 +1,15 @@
-// script.js
-
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent default anchor behavior
 
-    const targetId = e.target.getAttribute('href').substring(1); // Remove the '#' from href
+    const targetId = e.target.getAttribute('href').substring(1);
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
       window.scrollTo({
-        top: targetElement.offsetTop - 70, // Offset for fixed nav bar
-        behavior: 'smooth' // Smooth scroll
+        top: targetElement.offsetTop - 50,
+        behavior: 'smooth'
       });
     }
   });
@@ -34,19 +32,13 @@ backToTopButton.style.cssText = `
   width: 50px;
   height: 50px;
   font-size: 20px;
-  font-weight: bold;
   display: none;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s;
 `;
 
 backToTopButton.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 window.addEventListener('scroll', () => {
@@ -55,17 +47,4 @@ window.addEventListener('scroll', () => {
   } else {
     backToTopButton.style.display = 'none';
   }
-});
-
-// Hover animations for golden buttons
-document.querySelectorAll('.golden-button').forEach(button => {
-  button.addEventListener('mouseenter', () => {
-    button.style.transform = 'scale(1.1)';
-    button.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
-  });
-
-  button.addEventListener('mouseleave', () => {
-    button.style.transform = 'scale(1)';
-    button.style.boxShadow = 'none';
-  });
 });
