@@ -53,7 +53,7 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column; /* Stack items vertically */
   justify-content: center; /* Vertically center items */
@@ -62,7 +62,7 @@ body {
 }
 
 .banner h1 {
-  font-size: 5vw; /* Scale font size by viewport width */
+  font-size: 4vw; /* Scale font size by viewport width */
   margin-bottom: 1rem;
   color: #fff; /* Ensure white font color for the banner heading */
 }
@@ -81,14 +81,14 @@ nav {
   display: flex;
   justify-content: center; /* Center navigation items */
   flex-wrap: wrap;
-  gap: 0.5rem; /* Add spacing between navigation items */
+  gap: 1rem; /* Add spacing between navigation items */
 }
 
 nav a {
   color: #f39c12; /* Golden hyperlinks */
-  margin: 0 1.5vw;
+  margin: 0 1rem;
   text-decoration: none;
-  font-size: 1.5vw; /* Scale font size by viewport width */
+  font-size: 1rem; /* Adjust font size for better spacing */
   transition: all 0.3s ease;
   position: relative;
   text-shadow: 0px 0px 5px rgba(255, 223, 0, 0.5); /* Subtle glow effect */
@@ -201,7 +201,7 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
   .banner h1 {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 
   .banner p {
@@ -209,8 +209,8 @@ footer p {
   }
 
   nav a {
-    font-size: 2vw;
-    margin: 0 1vw;
+    font-size: 1.5vw;
+    margin: 0 0.5rem;
   }
 
   section h2 {
