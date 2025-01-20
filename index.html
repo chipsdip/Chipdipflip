@@ -4,208 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chip - The Strategic Meme Token</title>
-
-<style>
-  /* General Reset */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #fff;
-    line-height: 1.6;
-  }
-
-  /* Navigation */
-  nav {
-    display: flex;
-    justify-content: center;
-    background: #222;
-    padding: 10px 0;
-    border-bottom: 2px solid #ffcc00;
-  }
-
-  nav a {
-    color: #ffcc00;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s, border 0.3s;
-  }
-
-  nav a:hover {
-    background: #ffcc00;
-    color: #222;
-    border: 2px solid #ffcc00;
-  }
-
-  /* Banner Section */
-  .banner {
-    background-image: url('./chip/banner.jpg');
-    background-size: cover;
-    background-position: center bottom;
-    height: 450px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .banner-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-  }
-
-  .banner h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-  }
-
-  .banner p {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-  }
-
-  .golden-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #ffcc00, #ff9900);
-    color: #333 !important;
-    padding: 12px 25px;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    text-decoration: none;
-    margin: 10px;
-    font-weight: bold;
-    transition: transform 0.3s, box-shadow 0.3s, text-shadow 0.3s;
-    text-shadow: 2px 2px 4px #ffcc00;
-  }
-
-  .golden-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-shadow: 3px 3px 6px #ffd700;
-  }
-
-  /* Container */
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-  }
-
-  /* Section Styling */
-  section {
-    padding: 40px 20px;
-    background: #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-  }
-
-  section h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #ffcc00;
-    margin-bottom: 20px;
-  }
-
-  /* Footer */
-  footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-
-  footer p {
-    margin: 5px;
-    font-size: 1rem;
-  }
-
-  footer a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  footer a:hover {
-    color: #ffd700;
-    text-shadow: 0 0 5px #ffd700;
-  }
-
-  /* Additional Styling */
-  .card {
-    background: #444;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  }
-
-  .card h3 {
-    color: #ffcc00;
-    margin-bottom: 10px;
-  }
-
-  .card ul li {
-    margin-bottom: 10px;
-  }
-
-  .artwork {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    display: block;
-    border-radius: 10px;
-  }
-
-  .legal {
-    font-size: 0.9rem;
-    margin-top: 20px;
-    text-align: justify;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    nav {
-      flex-wrap: wrap;
-    }
-    .banner h1 {
-      font-size: 2rem;
-    }
-    .container {
-      width: 100%;
-      padding: 10px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    section h2 {
-      font-size: 1.5rem;
-    }
-    section p {
-      font-size: 0.9rem;
-    }
-    .golden-button {
-      font-size: 0.8rem;
-      padding: 8px 16px;
-    }
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Hero Section -->
 <header class="banner">
   <div class="banner-overlay">
     <h1>Chip - The Strategic Meme Token</h1>
@@ -215,23 +18,30 @@
   </div>
 </header>
 
+<!-- Navigation -->
 <nav>
-  <a href="#introduction">Introduction</a>
-  <a href="#tokenomics">Tokenomics</a>
-  <a href="#nfts">NFT Rewards</a>
-  <a href="#raids">Raid Performance</a>
-  <a href="#burn">Buyback & Burn</a>
-  <a href="#roadmap">Roadmap</a>
-  <a href="#whitepaper">White Paper</a>
-  <a href="#contact">Contact</a>
+  <a href="#introduction" class="golden-button-nav">Introduction</a>
+  <a href="#tokenomics" class="golden-button-nav">Tokenomics</a>
+  <a href="#nfts" class="golden-button-nav">NFT Rewards</a>
+  <a href="#raids" class="golden-button-nav">Raid Performance</a>
+  <a href="#burn" class="golden-button-nav">Buyback & Burn</a>
+  <a href="#roadmap" class="golden-button-nav">Roadmap</a>
+  <a href="#whitepaper" class="golden-button-nav">White Paper</a>
+  <a href="#technology" class="golden-button-nav">Technology</a>
+  <a href="#contact" class="golden-button-nav">Contact</a>
 </nav>
 
 <div class="container">
+
+  <!-- Introduction Section -->
   <section id="introduction">
     <h2>Introduction</h2>
     <p>$CHIP, inspired by the playful and strategic meme "eating the dip," capitalizes on market downturns within the Vector Smart Chain (VSC) ecosystem. By blending memetic appeal with functional utility, $CHIP creates a token designed to enhance user interaction while being explicitly defined as a utility token, not a security, in any jurisdiction.</p>
+    <p>The $CHIP token is purpose-built to foster utility and community participation within the VSC ecosystem. It promotes strategic engagement and introduces an element of enjoyment into cryptocurrency trading and investment. The token's primary aim is to enhance the user experience without functioning as a speculative investment vehicle.</p>
+    <img src="chip/1736138582632.jpg" alt="Chip Introduction Artwork" class="artwork">
   </section>
 
+  <!-- Tokenomics Section -->
   <section id="tokenomics">
     <h2>Tokenomics</h2>
     <div class="card">
@@ -258,11 +68,13 @@
         <li><strong>1% Development:</strong> Supports continuous improvements to the $CHIP ecosystem.</li>
       </ul>
     </div>
+    <img src="chip/1736138630904.jpg" alt="Chip Tokenomics Artwork" class="artwork">
   </section>
 
+  <!-- NFT Rewards Section -->
   <section id="nfts">
     <h2>NFT Rewards</h2>
-    <img src="./chip/Leonardo_Phoenix_10_Concept_1_The_Dip_Master_anime_style.jpg" class="artwork" alt="NFT Artwork">
+    <p>The NFT Tier System offers unique benefits to reward varying levels of community participation and contribution:</p>
     <div class="card">
       <h3>Base Tier (550 NFTs)</h3>
       <ul>
@@ -309,8 +121,8 @@
         <li>Top-tier staking rewards.</li>
       </ul>
     </div>
-  </section>
-
+    <img src="chip/1736139369603.jpg" alt="NFT Rewards Artwork" class="artwork">
+  </section>  <!-- Raid Performance Section -->
   <section id="raids">
     <h2>Monthly Airdrops and Raid Performance</h2>
     <p>Active participation in community raids is crucial for qualifying for $CHIP monthly airdrops. These mechanics ensure fairness and incentivize ecosystem growth:</p>
@@ -329,6 +141,7 @@
     </div>
   </section>
 
+  <!-- Buyback & Burn Section -->
   <section id="burn">
     <h2>Buyback & Burn Mechanism</h2>
     <p>Chip implements a buyback and burn mechanism linked to VSG’s burn rate. This reduces the circulating supply, ensuring scarcity and value retention.</p>
@@ -337,8 +150,10 @@
       <li>Calculates an equivalent amount of CHIP tokens to be burned.</li>
       <li>Executes buyback and burn operations to maintain value.</li>
     </ul>
+    <img src="chip/file-7YURJeeLEfcwQu5wfJS6UN.webp" alt="Buyback and Burn Artwork" class="artwork">
   </section>
 
+  <!-- Roadmap Section -->
   <section id="roadmap">
     <h2>Roadmap</h2>
     <div class="card">
@@ -366,8 +181,10 @@
         <li>Introduce a lite version of $CHIP for broader access and scalability.</li>
       </ul>
     </div>
+    <img src="chip/Untitled-1.png" alt="Roadmap Artwork" class="artwork">
   </section>
 
+  <!-- White Paper Section -->
   <section id="whitepaper">
     <h2>White Paper</h2>
     <p>$CHIP’s white paper outlines the framework for a utility token combining strategic engagement and community-driven initiatives. Key details include:</p>
@@ -378,8 +195,10 @@
       <li><strong>Legal Disclaimer:</strong> $CHIP tokens are utility tokens, not securities or investments.</li>
     </ul>
     <a href="chip/chip_white_paper.pdf" class="golden-button" download>Download Full White Paper</a>
+    <img src="chip/file-Tas8mFKc8uCazmNtBEVK1B.webp" alt="White Paper Artwork" class="artwork">
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Join the Chip Community</h2>
     <ul>
@@ -391,34 +210,28 @@
   </section>
 </div>
 
+<!-- Footer -->
 <footer>
   <p>"Secure Your Chips, Savor Every Dip."</p>
   <p>All rights reserved &copy; 2025 Chip</p>
-  <div class="legal">
-    <p><strong>Disclaimer:</strong> $CHIP tokens are utility tokens within the VSC ecosystem. They are not securities, bonds, guarantees, or financial investments in any jurisdiction. $CHIP tokens are solely designed for practical use and community engagement within the platform.</p>
-  </div>
 </footer>
 
 <script>
-  document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', (e) => {
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      const targetId = e.target.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
         window.scrollTo({
-          top: targetElement.offsetTop - 50,
-          behavior: 'smooth'
+          top: target.offsetTop - 50,
+          behavior: 'smooth',
         });
       }
     });
   });
+</script>
 
-  const backToTopButton = document.createElement('button');
-  backToTopButton.textContent = '↑';
-  backToTopButton.style.cssText = `
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: linear-gradient(135deg, #
+</body>
+</html>
+
