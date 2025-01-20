@@ -16,21 +16,18 @@ body {
 .banner {
   background-image: url('chip/banner.jpg');
   background-size: cover;
-  background-position: center bottom;
-  position: relative;
+  background-position: center;
   height: 450px;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-bottom: -5px;
 }
 
 .banner-overlay {
-  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text contrast */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
   width: 100%;
 }
 
@@ -44,129 +41,95 @@ body {
   margin-bottom: 20px;
 }
 
-.golden-button {
-  display: inline-block;
-  background: linear-gradient(135deg, #ffcc00, #ff9900); /* Original gradient */
-  color: #333333 !important; /* Ensure font color is dark gray */
-  padding: 12px 25px;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  text-decoration: none;
-  margin: 10px;
-  font-weight: bold;
-  transition: transform 0.3s, box-shadow 0.3s, text-shadow 0.3s;
-  text-shadow: 2px 2px 4px #ffcc00; /* Golden shadow */
-}
-
-.golden-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  text-shadow: 3px 3px 6px #ffd700; /* Lighter golden shadow on hover */
-}
-
-/* Hyperlinks */
-a {
-  color: #ffcc00; /* Gold color for links */
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s, text-shadow 0.3s;
-}
-
-a:hover {
-  color: #ffd700; /* Lighter gold on hover */
-  text-shadow: 0 0 5px #ffd700; /* Glow effect */
-  text-decoration: underline; /* Underline for hover */
-}
-
-a:visited {
-  color: #ffcc00; /* Keep visited links gold */
-}
-
 /* Navigation */
 nav {
-  display: flex;
-  justify-content: center;
-  background: #222;
-  padding: 10px 0;
+  background-color: #2a2a2a;
+  padding: 10px 20px;
+  text-align: center;
 }
 
 nav a {
-  padding: 10px 15px;
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto; /* Center the container and add vertical spacing */
-  padding: 20px;
+nav a:hover {
+  color: #f39c12; /* Highlight color */
 }
 
-/* Sections */
+/* Section Styling */
 section {
-  padding: 40px 20px;
-  margin-top: 10px;
-  background: #333; /* Slightly lighter gray for contrast with the background */
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #292929;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
-  text-align: center;
-  font-size: 2rem;
   margin-bottom: 20px;
-  color: #ffcc00; /* Gold headings for a premium look */
+  font-size: 2rem;
+  color: #f39c12; /* Highlight color */
+  text-align: center;
 }
 
 section p {
+  margin-bottom: 10px;
   font-size: 1.2rem;
   text-align: justify;
-  margin: 0 auto;
-  max-width: 800px; /* Limit text width for better readability */
-  color: #fff; /* White text for good contrast */
 }
 
 /* Card Styling */
 .card {
-  background: #444; /* Dark gray for cards */
-  border: 1px solid #555; /* Slightly lighter border */
-  border-radius: 8px;
+  background-color: #333;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 800px; /* Ensure cards are aligned with other content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
+  margin-bottom: 15px;
   font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #ffcc00; /* Gold text for headings */
+  color: #f39c12;
 }
 
-.card p {
-  font-size: 1.1rem;
-  text-align: justify;
-  color: #ddd; /* Light gray for card text */
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-/* Bullet Alignment */
-ul {
-  padding-left: 50px; /* Proper alignment for bullet points */
-  margin-right: auto;
-  max-width: 800px; /* Limit bullet section width */
-  margin-left: auto; /* Center-align bullets */
-  color: #fff; /* White bullets */
+.card ul li {
+  margin-bottom: 5px;
 }
 
+/* Image Styling */
 .artwork {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
   display: block;
   margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  padding: 0;
   border-radius: 10px;
+  box-shadow: none;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a2a2a;
+  color: #fff;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
 }
 
 /* Responsive Design */
@@ -179,34 +142,12 @@ ul {
     font-size: 1rem;
   }
 
-  .golden-button {
+  nav a {
     font-size: 0.9rem;
-    padding: 10px 20px;
+    margin: 0 10px;
   }
 
   .artwork {
     max-width: 90%;
   }
-
-  .card {
-    max-width: 90%; /* Adjust card size for smaller screens */
-  }
-
-  section p,
-  ul {
-    max-width: 90%; /* Adjusted for smaller screens */
-  }
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-footer p {
-  margin: 5px;
-  font-size: 1rem;
 }
