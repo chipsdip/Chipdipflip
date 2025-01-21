@@ -48,3 +48,20 @@ window.addEventListener('scroll', () => {
     backToTopButton.style.display = 'none';
   }
 });
+
+// Sound effect for hover
+const cheerSound = new Audio('cheer.m4a'); // Path to the cheer sound file
+
+// Buttons
+const buyChipButton = document.getElementById('buy-chip-btn');
+const communityButton = document.getElementById('community-btn');
+
+// Function to play sound
+const playCheerSound = () => {
+  cheerSound.currentTime = 0; // Reset sound to the beginning
+  cheerSound.play();
+};
+
+// Attach event listeners for hover
+buyChipButton.addEventListener('mouseover', playCheerSound);
+communityButton.addEventListener('mouseover', playCheerSound);
