@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Sound effect for hover
-const cheerSound = new Audio('cheer.m4a'); // Path to the cheer sound file
+const cheerSound = new Audio('Cheer.m4a'); // Path to the cheer sound file
 
 // Buttons
 const buyChipButton = document.getElementById('buy-chip-btn');
