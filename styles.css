@@ -161,10 +161,14 @@ ul li {
 
 /* Images */
 img {
+  max-width: 90%; /* Limits the image width to 90% of its container */
+  max-height: 500px; /* Ensures the image doesn't exceed 500px in height */
   border: 2px solid gold; /* Thin gold border */
   border-radius: 5px; /* Slight rounding for edges */
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.75); /* Subtle glowing effect */
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 img:hover {
