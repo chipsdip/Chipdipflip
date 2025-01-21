@@ -1,10 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chip - The Strategic Meme Token</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chip - The Strategic Meme Token</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+      padding: 10px 0;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    nav a {
+      color: #ffcc00;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s, border 0.3s;
+    }
+
+    nav a:hover {
+      background: #ffcc00;
+      color: #222;
+      border: 2px solid #ffcc00;
+    }
+
+    /* Banner Section */
+    .banner {
+      background-image: url('chip/banner.jpg');
+      background-size: cover;
+      background-position: center bottom;
+      height: 450px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .banner-overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .banner h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .golden-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffcc00, #ff9900);
+      color: #333 !important;
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s, text-shadow 0.3s;
+      text-shadow: 2px 2px 4px #ffcc00;
+    }
+
+    .golden-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-shadow: 3px 3px 6px #ffd700;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 40px 20px;
+      background: #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #ffcc00;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Artwork */
+    .artwork {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #ffcc00;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #222;
+      color: #ffcc00;
+      font-size: 0.9rem;
+    }
+
+    /* Back-to-top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #ffcc00, #ff9900);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .back-to-top.show {
+      display: flex;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,21 +189,16 @@
   <a href="#burn" class="golden-button-nav">Buyback & Burn</a>
   <a href="#roadmap" class="golden-button-nav">Roadmap</a>
   <a href="#whitepaper" class="golden-button-nav">White Paper</a>
-  <a href="#technology" class="golden-button-nav">Technology</a>
   <a href="#contact" class="golden-button-nav">Contact</a>
 </nav>
 
 <div class="container">
-
-  <!-- Introduction Section -->
   <section id="introduction">
     <h2>Introduction</h2>
     <p>$CHIP, inspired by the playful and strategic meme "eating the dip," capitalizes on market downturns within the Vector Smart Chain (VSC) ecosystem. By blending memetic appeal with functional utility, $CHIP creates a token designed to enhance user interaction while being explicitly defined as a utility token, not a security, in any jurisdiction.</p>
-    <p>The $CHIP token is purpose-built to foster utility and community participation within the VSC ecosystem. It promotes strategic engagement and introduces an element of enjoyment into cryptocurrency trading and investment. The token's primary aim is to enhance the user experience without functioning as a speculative investment vehicle.</p>
     <img src="chip/1736138582632.jpg" alt="Chip Introduction Artwork" class="artwork">
   </section>
 
-  <!-- Tokenomics Section -->
   <section id="tokenomics">
     <h2>Tokenomics</h2>
     <div class="card">
@@ -68,10 +225,8 @@
         <li><strong>1% Development:</strong> Supports continuous improvements to the $CHIP ecosystem.</li>
       </ul>
     </div>
-    <img src="chip/1736138630904.jpg" alt="Chip Tokenomics Artwork" class="artwork">
   </section>
 
-  <!-- NFT Rewards Section -->
   <section id="nfts">
     <h2>NFT Rewards</h2>
     <p>The NFT Tier System offers unique benefits to reward varying levels of community participation and contribution:</p>
@@ -121,39 +276,8 @@
         <li>Top-tier staking rewards.</li>
       </ul>
     </div>
-    <img src="chip/1736139369603.jpg" alt="NFT Rewards Artwork" class="artwork">
-  </section>  <!-- Raid Performance Section -->
-  <section id="raids">
-    <h2>Monthly Airdrops and Raid Performance</h2>
-    <p>Active participation in community raids is crucial for qualifying for $CHIP monthly airdrops. These mechanics ensure fairness and incentivize ecosystem growth:</p>
-    <div class="card">
-      <h3>Monthly Airdrop Mechanics</h3>
-      <ul>
-        <li><strong>Frequency:</strong> Monthly</li>
-        <li><strong>Eligibility:</strong> Open to all users actively participating in community raids.</li>
-        <li><strong>Top Performers:</strong> The top 15 raiders each month will receive airdrops, with amounts determined by participation and NFT tier holdings.</li>
-        <li><strong>Reward Scaling:</strong> Rewards adjust dynamically based on individual contributions and overall ecosystem performance.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Raid Requirements for Airdrops</h3>
-      <p>Participants must actively engage in community raids, contributing to ecosystem growth and visibility. Performance evaluations ensure fair and meaningful rewards.</p>
-    </div>
   </section>
 
-  <!-- Buyback & Burn Section -->
-  <section id="burn">
-    <h2>Buyback & Burn Mechanism</h2>
-    <p>Chip implements a buyback and burn mechanism linked to VSG’s burn rate. This reduces the circulating supply, ensuring scarcity and value retention.</p>
-    <ul>
-      <li>Monitors VSG burn data weekly.</li>
-      <li>Calculates an equivalent amount of CHIP tokens to be burned.</li>
-      <li>Executes buyback and burn operations to maintain value.</li>
-    </ul>
-    <img src="chip/file-7YURJeeLEfcwQu5wfJS6UN.webp" alt="Buyback and Burn Artwork" class="artwork">
-  </section>
-
-  <!-- Roadmap Section -->
   <section id="roadmap">
     <h2>Roadmap</h2>
     <div class="card">
@@ -183,31 +307,6 @@
     </div>
     <img src="chip/Untitled-1.png" alt="Roadmap Artwork" class="artwork">
   </section>
-
-  <!-- White Paper Section -->
-  <section id="whitepaper">
-    <h2>White Paper</h2>
-    <p>$CHIP’s white paper outlines the framework for a utility token combining strategic engagement and community-driven initiatives. Key details include:</p>
-    <ul>
-      <li><strong>Total Supply:</strong> 10,000,000 $CHIP</li>
-      <li><strong>Token Allocation:</strong> 60% Liquidity Pools, 15% CEX Listings, 10% Buyback & Burn, 9% Development Team, 4% Community Building, 2% Creator’s Wallet.</li>
-      <li><strong>Transaction Tax:</strong> 4% split across burning, redistribution, liquidity, and development.</li>
-      <li><strong>Legal Disclaimer:</strong> $CHIP tokens are utility tokens, not securities or investments.</li>
-    </ul>
-    <a href="chip/chip_white_paper.pdf" class="golden-button" download>Download Full White Paper</a>
-    <img src="chip/file-Tas8mFKc8uCazmNtBEVK1B.webp" alt="White Paper Artwork" class="artwork">
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Join the Chip Community</h2>
-    <ul>
-      <li><a href="https://t.me/chipsdipofficial">Chip Telegram</a></li>
-      <li><a href="https://t.me/VSCOfficial">VSC Telegram</a></li>
-      <li><a href="https://x.com/IncGsd13263?t=d8gJIRzQnzaJ3tDYduaJCA&s=09">Twitter</a></li>
-      <li><a href="#">Discord</a></li>
-    </ul>
-  </section>
 </div>
 
 <!-- Footer -->
@@ -217,21 +316,38 @@
 </footer>
 
 <script>
-  document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
       e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const target = document.getElementById(targetId);
-      if (target) {
+      const targetId = e.target.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
         window.scrollTo({
-          top: target.offsetTop - 50,
-          behavior: 'smooth',
+          top: targetElement.offsetTop - 50,
+          behavior: 'smooth'
         });
       }
     });
   });
-</script>
 
+  // Back-to-top button functionality
+  const backToTopButton = document.createElement('button');
+  backToTopButton.textContent = '↑';
+  backToTopButton.classList.add('back-to-top');
+  document.body.appendChild(backToTopButton);
+
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add('show');
+    } else {
+      backToTopButton.classList.remove('show');
+    }
+  });
+</script>
 </body>
 </html>
-
