@@ -160,12 +160,16 @@ ul li {
 }
 
 /* Images */
-.artwork {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
-  display: block;
-  border-radius: 10px;
+img {
+  border: 2px solid gold; /* Thin gold border */
+  border-radius: 5px; /* Slight rounding for edges */
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.75); /* Subtle glowing effect */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 1); /* Enhanced glow on hover */
 }
 
 /* Footer */
