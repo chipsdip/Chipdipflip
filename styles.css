@@ -45,7 +45,8 @@ nav a:hover {
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw; /* Ensures full-screen width */
-  min-height: 50vh; /* Ensures it adapts to screen size */
+  height: 60vh; /* Adjusted height */
+  max-height: 700px; /* Prevents excessive cropping */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -194,6 +195,10 @@ footer p {
 @media (max-width: 768px) {
   nav {
     flex-wrap: wrap; /* Allow nav items to wrap */
+  }
+
+  .banner {
+    height: 50vh;
   }
 
   .banner h1 {
