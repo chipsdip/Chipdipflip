@@ -40,7 +40,7 @@ nav a:hover {
 
 /* Banner Section */
 .banner {
-  background-image: url('chip/banner.jpg');
+  background-image: url('chip/banner.png');
   background-size: cover;
   background-position: center bottom;
   height: 450px;
