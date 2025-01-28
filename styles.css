@@ -41,11 +41,11 @@ nav a:hover {
 /* Banner Section */
 .banner {
   background-image: url('chip/banner.png');
-  background-size: contain; /* Ensures the whole image fits */
+  background-size: cover; /* Ensures it fills the entire width */
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  min-height: 50vh; /* Ensures the banner adapts to screen size */
+  width: 100vw; /* Ensures full-screen width */
+  min-height: 50vh; /* Ensures it adapts to screen size */
   display: flex;
   justify-content: center;
   align-items: flex-end;
