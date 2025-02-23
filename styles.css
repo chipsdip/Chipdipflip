@@ -1,262 +1,103 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #1e1e1e; /* Dark Gray Background */
-  color: #fff; /* White text for contrast */
-  line-height: 1.6;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chip - The Ultimate Community Token</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  background: #222;
-  padding: 10px 0;
-  border-bottom: 2px solid #ffcc00; /* Gold border for emphasis */
-}
+<body>
+  <!-- Hero Section -->
+  <header class="banner">
+    <div class="banner-overlay">
+      <h1>CHIP - Stack Up, Vote Smart, Eat the Dip</h1>
+      <p>The ultimate squad-powered token. No overlords, just community.</p>
+      <a href="https://vscdex.io" class="golden-button">Stack Your Chips</a>
+      <a href="https://t.me/chipsdipofficial" class="golden-button">Join the Crew</a>
+    </div>
+  </header>
 
-nav a {
-  color: #ffcc00; /* Gold color for links */
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  border: 2px solid transparent; /* Button-like effect */
-  border-radius: 5px;
-  transition: background 0.3s, color 0.3s, border 0.3s;
-}
+  <!-- Navigation -->
+  <nav>
+    <a href="#introduction">What is CHIP?</a>
+    <a href="#tokenomics">How CHIP Works</a>
+    <a href="#nfts">NFT Power-Ups</a>
+    <a href="#community">Squad Goals</a>
+    <a href="#burn">Buyback & Burn</a>
+    <a href="#roadmap">How We Moon</a>
+    <a href="#technology">Tech That Slaps</a>
+    <a href="#security">No Rug Pulls</a>
+    <a href="#whitepaper">White Paper</a>
+    <a href="#gallery">NFT Art</a>
+    <a href="#contact">Get Involved</a>
+  </nav>
 
-nav a:hover {
-  background: #ffcc00; /* Gold background on hover */
-  color: #222; /* Dark text on hover */
-  border: 2px solid #ffcc00; /* Match border to background */
-}
+  <div class="container">
+    <!-- Introduction -->
+    <section id="introduction">
+      <h2>What is CHIP?</h2>
+      <p>CHIP is the big-brain, high-energy token built for stacking, voting, and thriving on Vector Smart Chain (VSC).</p>
+      <ul>
+        <li>🚀 <strong>Vote</strong> on where the squad’s treasury goes</li>
+        <li>💰 <strong>Earn</strong> rewards for staking and holding</li>
+        <li>🔥 <strong>Back</strong> promising projects before they explode</li>
+        <li>🛡️ <strong>No rug pulls</strong> – Just straight-up community control</li>
+      </ul>
+      <img src="chip/1736138582632.jpg" alt="CHIP Community Power" class="artwork">
+      <img src="chip/1736138630904.jpg" alt="Tokenomics Overview Artwork" class="artwork">
+      <img src="chip/1736139369603.jpg" alt="NFT Rewards Overview Artwork" class="artwork">
+      <img src="chip/Leonardo_Phoenix_10_Concept_1_The_Dip_Master_anime_style_0.jpg" alt="Community Engagement Overview Artwork" class="artwork">
+      <img src="chip/file-7YURJeeLEfcwQu5wfJS6UN.webp" alt="Buyback and Burn Overview Artwork" class="artwork">
+      <img src="chip/Untitled-1.png" alt="Roadmap Overview Artwork" class="artwork">
+      <img src="chip/chiplogo5.jpg" alt="Technology Overview Artwork" class="artwork">
+      <img src="chip/Untitled.png" alt="Security Overview Artwork" class="artwork">
+    </section>
 
-/* Banner Section */
-.banner {
-  background-image: url('chip/banner.png');
-  background-size: contain; /* Ensures the full image is always visible */
-  background-repeat: no-repeat;
-  background-position: center top;
-  width: 100vw; /* Ensures full-screen width */
-  height: auto; /* Dynamic height to maintain aspect ratio */
-  min-height: 100vh; /* Ensures it fills the viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative; /* Allows layering */
-}
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>NFT Art Gallery</h2>
+      <div class="gallery-grid">
+        <img src="chip/nft1.jpg" alt="NFT Concept 1">
+        <img src="chip/nft2.jpg" alt="NFT Concept 2">
+        <img src="chip/nft3.jpg" alt="NFT Concept 3">
+        <img src="chip/nft4.jpg" alt="NFT Concept 4">
+        <img src="chip/nft5.jpg" alt="NFT Concept 5">
+        <img src="chip/nft6.jpg" alt="NFT Concept 6">
+        <img src="chip/nft7.jpg" alt="NFT Concept 7">
+        <img src="chip/nft8.jpg" alt="NFT Concept 8">
+        <img src="chip/nft9.jpg" alt="NFT Concept 9">
+        <img src="chip/nft10.jpg" alt="NFT Concept 10">
+        <img src="chip/nft11.jpg" alt="NFT Concept 11">
+        <img src="chip/nft12.jpg" alt="NFT Concept 12">
+        <img src="chip/nft13.jpg" alt="NFT Concept 13">
+        <img src="chip/nft14.jpg" alt="NFT Concept 14">
+        <img src="chip/nft15.jpg" alt="NFT Concept 15">
+      </div>
+    </section>
 
-/* Responsive fixes for smaller screens */
-@media (max-width: 1024px) {
-  .banner {
-    min-height: 90vh; /* Adjusts for tablets */
-  }
-}
+    <!-- Legal Disclaimer -->
+    <section id="legal">
+      <h2>The Fine Print</h2>
+      <p>🚫 CHIP is NOT an investment, security, or financial product. There are no guaranteed profits, dividends, or passive income schemes.</p>
+      <p>⚖️ <strong>Regulatory Safe</strong> – CHIP follows global utility token standards and does not fall under security laws anywhere.</p>
+      <p>📜 <strong>100% Community-Driven</strong> – Governance runs everything. No single dev can hijack the project.</p>
+      <p>💬 "A tree grows stronger not by standing alone but by the strength of the forest around it." – Khalil Gibran</p>
+    </section>
 
-@media (max-width: 768px) {
-  .banner {
-    min-height: 80vh; /* Adjusts for smaller screens */
-  }
-}
+    <!-- White Paper -->
+    <section id="whitepaper">
+      <h2>White Paper</h2>
+      <p>Want the full deep dive? Read the **CHIP White Paper** for the **detailed breakdown.**</p>
+      <a href="/mnt/data/Chip_White_Paper.docx" class="golden-button" download>Download White Paper</a>
+    </section>
+  </div>
 
-@media (max-width: 480px) {
-  .banner {
-    min-height: 75vh; /* Further adjusts for mobile */
-  }
-}
+  <footer>
+    <p>&copy; 2025 CHIP. All rights reserved.</p>
+  </footer>
 
-.banner-overlay {
-  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text contrast */
-  color: white;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.banner h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-
-.banner p {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-}
-
-.golden-button {
-  display: inline-block;
-  background: linear-gradient(135deg, #ffcc00, #ff9900);
-  color: #333 !important;
-  padding: 12px 25px;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  text-decoration: none;
-  margin: 10px;
-  font-weight: bold;
-  transition: transform 0.3s, box-shadow 0.3s, text-shadow 0.3s;
-  text-shadow: 2px 2px 4px #ffcc00;
-}
-
-.golden-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  text-shadow: 3px 3px 6px #ffd700; /* Lighter golden shadow on hover */
-}
-
-/* Links */
-a {
-  color: #ffcc00; /* Gold links */
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s, text-shadow 0.3s;
-}
-
-a:hover {
-  color: #ffd700; /* Lighter gold on hover */
-  text-shadow: 0 0 5px #ffd700; /* Glow effect */
-}
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto; /* Center the container and add vertical spacing */
-  padding: 20px;
-}
-
-/* Section Styling */
-section {
-  padding: 40px 20px;
-  background: #333; /* Slightly lighter gray for contrast with the background */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px; /* Add space between sections */
-  text-align: left; /* Ensure text is left-aligned */
-}
-
-section h2 {
-  text-align: center; /* Headings stay centered */
-  font-size: 2rem;
-  color: #ffcc00;
-  margin-bottom: 20px; /* Space below headings */
-}
-
-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px; /* Add space below paragraphs */
-}
-
-/* Cards */
-.card {
-  background: #444;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
-
-.card h3 {
-  color: #ffcc00;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #ddd;
-}
-
-/* Bullet Points */
-ul {
-  padding-left: 40px;
-  margin-bottom: 20px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-/* Images */
-img {
-  max-width: 90%; /* Limits the image width to 90% of its container */
-  max-height: 500px; /* Ensures the image doesn't exceed 500px in height */
-  border: 2px solid gold; /* Thin gold border */
-  border-radius: 5px; /* Slight rounding for edges */
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.75); /* Subtle glowing effect */
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
-  display: block;
-  margin: 0 auto; /* Center the image horizontally */
-}
-
-img:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 0 20px rgba(255, 215, 0, 1); /* Enhanced glow on hover */
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-footer p {
-  margin: 5px;
-  font-size: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap; /* Allow nav items to wrap */
-  }
-
-  .banner h1 {
-    font-size: 2rem;
-  }
-
-  .banner p {
-    font-size: 1rem;
-  }
-
-  .golden-button {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
-
-  .artwork {
-    max-width: 100%;
-  }
-
-  .card {
-    max-width: 100%;
-    padding: 15px;
-  }
-
-  section p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  section h2 {
-    font-size: 1.5rem;
-  }
-
-  section p {
-    font-size: 0.9rem;
-  }
-
-  .golden-button {
-    font-size: 0.8rem;
-    padding: 8px 16px;
-  }
-}
+  <script src="script.js"></script>
+</body>
+</html>
