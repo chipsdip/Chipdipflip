@@ -264,26 +264,27 @@ footer p {
 #gallery {
     text-align: center;
     padding: 40px 20px;
-    background: #222; /* Matches your site’s dark theme */
-    border-radius: 8px;
+    background: #222; /* Keeps the dark theme */
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .gallery a {
     display: block;
-    width: 150px; /* Adjust the size of thumbnails */
-    height: 150px;
-    overflow: hidden;
     border: 2px solid #ffcc00;
     border-radius: 8px;
+    overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
 
