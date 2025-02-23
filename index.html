@@ -504,27 +504,53 @@ window.addEventListener("load", function() {
 <!-- Lightbox2 JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-<!-- Initialize Carousel -->
 <script>
 window.addEventListener("load", function() {
-    console.log("Page fully loaded, initializing Slick...");
+    console.log("Page fully loaded, checking for .gallery-carousel...");
 
-    // Check if Slick exists
-    if (typeof $.fn.slick === "undefined") {
-        console.error("Slick Carousel is not loaded!");
-        return;
+    // Wait for jQuery to be available
+    function waitForjQuery(callback) {
+        if (typeof jQuery === "undefined") {
+            console.error("Error: jQuery is not loaded!");
+            setTimeout(() => waitForjQuery(callback), 100);
+        } else {
+            callback();
+        }
     }
 
-    // Initialize Slick Carousel
-    $('.gallery-carousel').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        autoplay: false,
-        centerMode: true,
-        variableWidth: false,
-        prevArrow: '<button type="button" class="slick-prev">←</button>',
-        nextArrow: '<button type="button" class="slick-next">→</button>'
-    });
+    // Wait for Slick to be available
+    function waitForSlick() {
+        if (typeof $.fn.slick === "undefined") {
+            console.error("Error: Slick Carousel is not loaded!");
+            setTimeout(waitForSlick, 100);
+        } else {
+            initializeSlick();
+        }
+    }
+
+    function initializeSlick() {
+        let gallery = document.querySelector('.gallery-carousel');
+
+        if (!gallery) {
+            console.error("Error: .gallery-carousel element not found!");
+            return;
+        } else {
+            console.log("✅ .gallery-carousel exists, initializing Slick...");
+        }
+
+        $('.gallery-carousel').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: false,
+            centerMode: true,
+            variableWidth: false,
+            prevArrow: '<button type="button" class="slick-prev">←</button>',
+            nextArrow: '<button type="button" class="slick-next">→</button>'
+        });
+    }
+
+    // Start waiting for jQuery and Slick
+    waitForjQuery(waitForSlick);
 });
 </script>
