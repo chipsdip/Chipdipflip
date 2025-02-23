@@ -495,6 +495,30 @@ $(document).ready(function(){
     });
 });
 </script>
+<!-- jQuery (Required for Slick Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<!-- Initialize Carousel -->
+<script>
+$(document).ready(function(){
+    $('.gallery-carousel').slick({
+        slidesToShow: 3, /* Shows 3 images at a time */
+        slidesToScroll: 1,
+        infinite: true, /* Enables looping */
+        autoplay: false,
+        centerMode: true, /* Centers the middle image */
+        variableWidth: false, /* Ensures consistent spacing */
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+    });
+});
+</script>
 
 </body>
 </html>
