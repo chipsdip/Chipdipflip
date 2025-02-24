@@ -471,65 +471,40 @@
     </section>
   </div>
   <script src="script.js"></script>
-<!-- jQuery (Required for Slick Carousel) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Slick Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-<!-- Lightbox2 JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-<!-- Initialize Carousel -->
 <script>
-window.addEventListener("load", function() {
-    $('.gallery-carousel').slick({
-        slidesToShow: 3, /* Shows 3 images at a time */
-        slidesToScroll: 1,
-        infinite: true, /* Enables looping */
-        autoplay: false,
-        centerMode: true, /* Centers the middle image */
-        variableWidth: false, /* Ensures consistent spacing */
-        prevArrow: '<button type="button" class="slick-prev">←</button>',
-        nextArrow: '<button type="button" class="slick-next">→</button>'
-    });
-});
-</script>
-<script>
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     console.log("Page fully loaded, checking for .gallery-carousel...");
 
-    // Wait for jQuery to be available
-    function waitForjQuery(callback) {
-        if (typeof jQuery === "undefined") {
-            console.error("Error: jQuery is not loaded!");
-            setTimeout(() => waitForjQuery(callback), 100);
-        } else {
-            callback();
-        }
-    }
-
-    // Wait for Slick to be available
-    function waitForSlick() {
-        if (typeof $.fn.slick === "undefined") {
-            console.error("Error: Slick Carousel is not loaded!");
-            setTimeout(waitForSlick, 100);
-        } else {
-            initializeSlick();
-        }
-    }
-
     function initializeSlick() {
-        let gallery = document.querySelector('.gallery-carousel');
+        let $gallery = $('.gallery-carousel');
 
-        if (!gallery) {
+        // Check if the gallery exists
+        if (!$gallery.length) {
             console.error("Error: .gallery-carousel element not found!");
             return;
-        } else {
-            console.log("✅ .gallery-carousel exists, initializing Slick...");
         }
 
-        $('.gallery-carousel').slick({
+        console.log("✅ .gallery-carousel found, checking Slick dependencies...");
+
+        // Wait until Slick is available
+        if (typeof $.fn.slick === "undefined") {
+            console.error("Error: Slick Carousel is not loaded!");
+            return;
+        }
+
+        console.log("✅ Slick Carousel loaded, checking for slides...");
+
+        // Check if slides exist before initializing
+        let $slides = $gallery.children('a'); // Select all image anchors inside .gallery-carousel
+        if ($slides.length === 0) {
+            console.error("Error: No slides found inside .gallery-carousel!");
+            return;
+        }
+
+        console.log(`✅ Found ${$slides.length} slides, initializing Slick...`);
+
+        // Initialize Slick
+        $gallery.slick({
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
@@ -539,9 +514,12 @@ window.addEventListener("load", function() {
             prevArrow: '<button type="button" class="slick-prev">←</button>',
             nextArrow: '<button type="button" class="slick-next">→</button>'
         });
+
+        console.log("🎉 Slick successfully initialized!");
     }
 
-    // Start waiting for jQuery and Slick
-    waitForjQuery(waitForSlick);
+    // Run the function after checking everything
+    initializeSlick();
 });
 </script>
+<body></body>
