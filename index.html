@@ -2,12 +2,25 @@
 <html lang="en">
 
 <head>
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chip - The Strategic Meme Token</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Lightbox2 CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chip - The Strategic Meme Token</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lightbox2 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
 
 </head>
 
@@ -470,40 +483,37 @@
       </p>
     </section>
   </div>
-  <script src="script.js"></script>
+<!-- jQuery (Load First) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<!-- Initialize Slick Carousel -->
 <script>
 window.addEventListener("load", function () {
     console.log("Page fully loaded, checking for .gallery-carousel...");
-
     function initializeSlick() {
         let $gallery = $('.gallery-carousel');
-
-        // Check if the gallery exists
         if (!$gallery.length) {
             console.error("Error: .gallery-carousel element not found!");
             return;
         }
-
         console.log("✅ .gallery-carousel found, checking Slick dependencies...");
-
-        // Wait until Slick is available
         if (typeof $.fn.slick === "undefined") {
             console.error("Error: Slick Carousel is not loaded!");
             return;
         }
-
         console.log("✅ Slick Carousel loaded, checking for slides...");
-
-        // Check if slides exist before initializing
-        let $slides = $gallery.children('a'); // Select all image anchors inside .gallery-carousel
+        let $slides = $gallery.children('a');
         if ($slides.length === 0) {
             console.error("Error: No slides found inside .gallery-carousel!");
             return;
         }
-
         console.log(`✅ Found ${$slides.length} slides, initializing Slick...`);
-
-        // Initialize Slick
         $gallery.slick({
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -514,12 +524,8 @@ window.addEventListener("load", function () {
             prevArrow: '<button type="button" class="slick-prev">←</button>',
             nextArrow: '<button type="button" class="slick-next">→</button>'
         });
-
         console.log("🎉 Slick successfully initialized!");
     }
-
-    // Run the function after checking everything
     initializeSlick();
 });
 </script>
-<body></body>
